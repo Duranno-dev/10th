@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>두란노감리교회 창립 10주년</title>
+<meta name="description" content="여호와께서 여기까지 우리를 도우셨다. 창립 10주년 행사 안내">
+<meta property="og:title" content="두란노감리교회 창립 10주년 프로젝트">
+<meta property="og:description" content="찬양제, 바자회, 성지순례, 뮤지컬 The Power, 국내 아웃리치 안내">
+<meta property="og:type" content="website">
+<!-- 카카오톡 미리보기 이미지: 직접 업로드하실 때 아래 주소를 포스터 이미지 주소로 바꿔 주세요 -->
+<meta property="og:image" content="https://duranno-dev.github.io/10th/kakao-cover.jpg">
+<meta property="og:url" content="https://duranno-dev.github.io/10th/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1F3A7A; --navy-deep:#16295A; --mist:#7A9BB5; --mist-soft:#E6EDF3;
+  --teal:#2BA8C9; --leaf:#6DB33F; --paper:#F6F8FA; --card:#FFFFFF;
+  --ink:#1B2433; --sub:#5B6676; --line:#DCE3EA;
+  --serif:"Gowun Batang","Nanum Myeongjo","AppleMyungjo",serif;
+  --sans:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --navy:#9DB6EA; --navy-deep:#C9D7F4; --mist:#8FA9C0; --mist-soft:#1D2735;
+    --paper:#0F1520; --card:#171F2C; --ink:#E7ECF3; --sub:#A2ADBB; --line:#2A3445;
+  }
+}
+:root[data-theme="dark"]{
+  --navy:#9DB6EA; --navy-deep:#C9D7F4; --mist:#8FA9C0; --mist-soft:#1D2735;
+  --paper:#0F1520; --card:#171F2C; --ink:#E7ECF3; --sub:#A2ADBB; --line:#2A3445;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+  font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;word-break:keep-all}
+button{font:inherit;color:inherit}
+a{color:var(--navy)}
+:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:6px}
+.wrap{max-width:520px;margin:0 auto;position:relative;overflow:hidden;min-height:100vh}
+
+/* ---------- 표지 ---------- */
+.hero{position:relative;background:var(--navy-deep);color:#fff;padding:56px 28px 44px;overflow:hidden}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .hero{background:#14234A}}
+:root[data-theme="dark"] .hero{background:#14234A}
+.hero-ten{position:absolute;right:-18px;top:-38px;font-family:var(--serif);font-weight:700;
+  font-size:250px;line-height:1;color:rgba(255,255,255,.07);letter-spacing:-12px;pointer-events:none}
+.hero-church{font-size:14px;opacity:.75;margin:0 0 18px;letter-spacing:.02em}
+.hero h1{font-family:var(--serif);font-weight:700;font-size:38px;line-height:1.25;margin:0 0 6px}
+.hero-years{font-family:var(--serif);font-size:17px;opacity:.85;margin:0 0 30px}
+.stone{border-left:3px solid var(--leaf);padding:4px 0 4px 16px;margin:0}
+.stone p{font-family:var(--serif);font-size:19px;line-height:1.6;margin:0 0 4px}
+.stone cite{font-style:normal;font-size:13px;opacity:.7}
+
+/* 다음 행사 */
+.next{margin:-22px 20px 0;position:relative;background:var(--card);border-radius:18px;
+  padding:18px 20px;display:flex;align-items:center;gap:16px;border:1px solid var(--line);
+  box-shadow:0 10px 30px -18px rgba(22,41,90,.5);cursor:pointer;width:calc(100% - 40px);text-align:left}
+.dday{flex:none;width:68px;height:68px;border-radius:50%;background:var(--navy);color:#fff;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:var(--serif)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .dday{color:#0F1520}}
+:root[data-theme="dark"] .dday{color:#0F1520}
+.dday small{font-family:var(--sans);font-size:11px;opacity:.8;line-height:1}
+.dday b{font-size:22px;line-height:1.2}
+.next-label{font-size:13px;color:var(--sub);margin:0}
+.next-title{font-weight:700;font-size:17px;margin:0;line-height:1.4}
+.next-when{font-size:14px;color:var(--sub);margin:0}
+
+/* 일정 목록 */
+.section{padding:40px 20px 8px}
+.section h2{font-family:var(--serif);font-size:23px;margin:0 0 4px;color:var(--navy-deep)}
+.section .lead{color:var(--sub);font-size:15px;margin:0 0 22px}
+.month{font-family:var(--serif);font-size:15px;color:var(--mist);margin:26px 0 10px;
+  display:flex;align-items:center;gap:10px}
+.month::after{content:"";flex:1;height:1px;background:var(--line)}
+.ev{display:flex;gap:16px;width:100%;text-align:left;background:var(--card);border:1px solid var(--line);
+  border-radius:16px;padding:16px 16px 16px 14px;margin-bottom:10px;cursor:pointer;
+  transition:transform .15s ease, border-color .15s ease}
+.ev:active{transform:scale(.985)}
+.ev:hover{border-color:var(--mist)}
+.ev-date{flex:none;width:52px;text-align:center;border-right:1px solid var(--line);padding-right:12px}
+.ev-date b{display:block;font-family:var(--serif);font-size:28px;line-height:1.1;color:var(--navy)}
+.ev-date span{font-size:12px;color:var(--sub)}
+.ev-body{flex:1;min-width:0}
+.ev-kind{display:inline-block;font-size:12px;font-weight:500;padding:1px 9px;border-radius:20px;margin-bottom:4px}
+.ev-title{font-weight:700;font-size:17px;line-height:1.4;margin:0}
+.ev-meta{font-size:14px;color:var(--sub);margin:2px 0 0}
+.ev.past{opacity:.55}
+.ev.past .ev-kind::after{content:" · 지난 행사"}
+.chev{flex:none;align-self:center;width:8px;height:8px;border-right:2px solid var(--mist);
+  border-top:2px solid var(--mist);transform:rotate(45deg);margin-right:4px}
+
+.k-praise{background:#E3EEFB;color:#1F3A7A}
+.k-feast{background:#FBEEDD;color:#8A4B12}
+.k-pilgrim{background:#E5F2EA;color:#2F6B3A}
+.k-stage{background:#EDE6F7;color:#56338C}
+.k-serve{background:#DFF3F8;color:#11677D}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) [class*="k-"]{background:var(--mist-soft);color:var(--navy)}}
+:root[data-theme="dark"] [class*="k-"]{background:var(--mist-soft);color:var(--navy)}
+
+/* 나눔 */
+.share{margin:30px 20px 0;padding:24px 22px;border-radius:18px;background:var(--mist-soft)}
+.share h3{font-family:var(--serif);font-size:20px;margin:0 0 8px;color:var(--navy-deep)}
+.share p{margin:0;font-size:15px;color:var(--ink)}
+.ten-dots{display:flex;gap:6px;margin:16px 0 4px;flex-wrap:wrap}
+.ten-dots i{width:22px;height:22px;border-radius:50%;border:2px solid var(--teal);display:block}
+.ten-dots i:nth-child(odd){border-color:var(--leaf)}
+
+.foot{text-align:center;padding:40px 24px 48px;color:var(--sub);font-size:14px}
+.foot strong{display:block;font-family:var(--serif);font-size:18px;color:var(--navy);margin-top:14px}
+.foot .eng{font-size:12px;letter-spacing:.04em}
+.link-btn{margin-top:18px;background:none;border:1px solid var(--line);border-radius:30px;
+  padding:9px 20px;font-size:14px;cursor:pointer;color:var(--navy)}
+
+/* ---------- 상세 화면 ---------- */
+.detail{position:fixed;inset:0;background:var(--paper);z-index:20;overflow-y:auto;
+  transform:translateX(100%);transition:transform .32s cubic-bezier(.2,.8,.2,1);visibility:hidden;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.detail.open{transform:none;visibility:visible}
+.detail-inner{max-width:520px;margin:0 auto}
+.topbar{position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:8px;padding:10px 12px;
+  background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.back{background:none;border:none;cursor:pointer;display:flex;align-items:center;gap:6px;
+  padding:8px 10px;font-size:15px;color:var(--navy)}
+.back::before{content:"";width:9px;height:9px;border-left:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg)}
+.topbar-title{font-size:14px;color:var(--sub);margin-left:auto;margin-right:8px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+.d-head{padding:28px 22px 22px}
+.d-head h2{font-family:var(--serif);font-size:30px;line-height:1.3;margin:8px 0 6px;color:var(--navy-deep)}
+.d-sub{color:var(--sub);margin:0;font-size:15px}
+.facts{margin:0 20px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:6px 18px}
+.fact{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid var(--line)}
+.fact:last-child{border-bottom:none}
+.fact dt{flex:none;width:44px;font-size:13px;color:var(--sub);padding-top:2px}
+.fact dd{margin:0;font-weight:500}
+.fact dd a{font-weight:400;font-size:14px;margin-left:6px}
+.block{padding:30px 22px 0}
+.block h3{font-family:var(--serif);font-size:19px;margin:0 0 10px;color:var(--navy)}
+.block p{margin:0 0 10px}
+.steps{list-style:none;margin:0;padding:0}
+.steps li{position:relative;padding:0 0 12px 22px}
+.steps li::before{content:"";position:absolute;left:4px;top:11px;width:7px;height:7px;border-radius:50%;background:var(--teal)}
+.word{margin:30px 20px 0;padding:22px 22px;border-radius:16px;background:var(--navy-deep);color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .word{background:#14234A}}
+:root[data-theme="dark"] .word{background:#14234A}
+.word p{font-family:var(--serif);font-size:18px;line-height:1.75;margin:0 0 8px}
+.word cite{font-style:normal;font-size:13px;opacity:.75}
+.give{margin:24px 20px 0;padding:18px 20px;border:1px dashed var(--mist);border-radius:16px;
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.give-text{flex:1;min-width:180px}
+.give-text small{display:block;font-size:13px;color:var(--sub)}
+.give-text b{font-size:17px;letter-spacing:.02em}
+.copy{border:none;background:var(--navy);color:#fff;border-radius:30px;padding:9px 18px;font-size:14px;cursor:pointer}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .copy{color:#0F1520}}
+:root[data-theme="dark"] .copy{color:#0F1520}
+.pager{display:flex;gap:10px;padding:34px 20px 40px}
+.pager button{flex:1;background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:12px 14px;text-align:left;cursor:pointer;min-height:64px}
+.pager button[disabled]{visibility:hidden}
+.pager small{display:block;font-size:12px;color:var(--sub)}
+.pager span{font-size:14px;font-weight:500;line-height:1.4;display:block}
+.pager .nx{text-align:right}
+
+.toast{position:fixed;left:50%;bottom:calc(28px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);
+  background:var(--ink);color:var(--paper);padding:10px 20px;border-radius:30px;font-size:14px;
+  opacity:0;transition:.25s;z-index:50;pointer-events:none}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap" id="home">
+  <header class="hero">
+    <div class="hero-ten" aria-hidden="true">10</div>
+    <p class="hero-church">두란노감리교회</p>
+    <h1>창립 10주년<br>프로젝트</h1>
+    <p class="hero-years">2016 – 2026</p>
+    <blockquote class="stone">
+      <p>여호와께서 여기까지<br>우리를 도우셨다</p>
+      <cite>사무엘상 7장 12절</cite>
+    </blockquote>
+  </header>
+
+  <button class="next" id="nextCard" type="button"></button>
+
+  <section class="section" aria-labelledby="plan">
+    <h2 id="plan">함께하는 다섯 가지 행사</h2>
+    <p class="lead">행사를 누르면 자세한 안내를 볼 수 있습니다.</p>
+    <div id="list"></div>
+  </section>
+
+  <section class="share">
+    <h3>열 교회와 나누는 감사</h3>
+    <p>지난 10년간 베풀어 주신 하나님의 은혜에 감사하며, 섬김이 필요한 교회 10곳을 선정하여 주님의 사랑을 나눕니다.</p>
+    <div class="ten-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </section>
+
+  <footer class="foot">
+    함께 예배하고, 함께 나누고, 함께 기뻐하며<br>
+    하나님께서 주시는 은혜와 기쁨을 풍성히 누리시길 바랍니다.
+    <strong>두란노감리교회</strong>
+    <span class="eng">Duranno Methodist Church</span><br>
+    <button class="link-btn" type="button" id="shareLink">이 페이지 주소 복사</button>
+  </footer>
+</div>
+
+<article class="detail" id="detail" aria-hidden="true">
+  <div class="detail-inner">
+    <div class="topbar">
+      <button class="back" type="button" id="backBtn">일정</button>
+      <span class="topbar-title" id="topTitle"></span>
+    </div>
+    <div id="detailBody"></div>
+  </div>
+</article>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const EVENTS = [
+  {
+    id:"outreach", kind:"섬김", kc:"k-serve",
+    title:"국내 아웃리치", sub:"만나교회와 함께하는 주일",
+    date:"2026-10-25", dateLabel:"10월 25일 주일", time:"", place:"만나교회",
+    account:"137-006-410080",
+    intro:[
+      "창립 10주년 나눔의 첫걸음입니다. 우리가 받은 은혜를 우리 안에만 머물게 하지 않고, 섬김이 필요한 교회와 함께 예배하며 주님의 사랑을 나눕니다.",
+      "10곳의 교회를 섬기는 이번 프로젝트의 마음을 가장 먼저 실천하는 자리입니다."
+    ],
+    how:["만나교회와 성도들을 위해 미리 기도로 준비해 주세요.","참여 인원과 출발 시간은 교회 광고를 확인해 주세요.","직접 함께하지 못하시는 분은 후원으로 동참하실 수 있습니다."],
+    verse:"그러므로 우리는 기회 있는 대로 모든 이에게 착한 일을 하되 더욱 믿음의 가정들에게 할지니라",
+    ref:"갈라디아서 6장 10절"
+  },
+  {
+    id:"praise", kind:"예배", kc:"k-praise",
+    title:"추수감사절 전교인 찬양제", sub:"온 성도가 드리는 감사의 노래",
+    date:"2026-11-01", dateLabel:"11월 1일 주일", time:"오전 10시", place:"3층 본당",
+    intro:[
+      "추수감사주일, 온 교회가 한자리에 모여 지난 10년을 지켜 주신 하나님께 감사의 찬양을 올려드립니다.",
+      "어린아이부터 어르신까지 세대가 함께 부르는 찬양으로 한 몸 된 교회의 기쁨을 누립니다."
+    ],
+    how:["예배 시작 전 미리 본당에 자리해 주세요.","가정과 부서가 함께 앉아 찬양해도 좋습니다.","한 해 동안 받은 감사의 제목을 마음에 품고 나아오세요."],
+    verse:"감사함으로 그의 문에 들어가며 찬송함으로 그의 궁정에 들어가서 그에게 감사하며 그의 이름을 송축할지어다",
+    ref:"시편 100편 4절"
+  },
+  {
+    id:"bazaar", kind:"교제", kc:"k-feast",
+    title:"추수감사절 먹거리 바자회", sub:"함께 먹고 함께 나누는 잔치",
+    date:"2026-11-01", dateLabel:"11월 1일 주일", time:"오후 12시 30분", place:"야외마당",
+    account:"135-000-055536",
+    intro:[
+      "찬양제를 마친 뒤 야외마당에서 먹거리 바자회가 열립니다. 정성껏 준비한 음식을 나누며 성도 간의 따뜻한 교제를 누립니다.",
+      "바자회에 담긴 마음은 창립 10주년 나눔 사역으로 이어집니다."
+    ],
+    how:["가족과 이웃을 초대해 함께 오세요.","현장 참여가 어려우신 분은 후원계좌로 동참하실 수 있습니다.","봉사로 섬기실 분은 담당 부서에 미리 알려 주세요."],
+    verse:"날마다 마음을 같이하여 성전에 모이기를 힘쓰고 집에서 떡을 떼며 기쁨과 순전한 마음으로 음식을 먹고",
+    ref:"사도행전 2장 46절"
+  },
+  {
+    id:"pilgrim", kind:"순례", kc:"k-pilgrim",
+    title:"여선교회 주관 가을 성지순례", sub:"믿음의 발자취를 따라 걷는 하루",
+    date:"2026-11-07", dateLabel:"11월 7일 토요일", time:"", place:"세계성막복음센터, 제암리교회",
+    account:"137-006-409992",
+    maps:[["세계성막복음센터","https://map.naver.com/p/search/%EC%84%B8%EA%B3%84%EC%84%B1%EB%A7%89%EB%B3%B5%EC%9D%8C%EC%84%BC%ED%84%B0"],
+          ["제암리교회","https://map.naver.com/p/search/%EC%A0%9C%EC%95%94%EB%A6%AC%EA%B5%90%ED%9A%8C"]],
+    intro:[
+      "세계성막복음센터에서는 광야의 성막을 통해 우리 가운데 거하시는 하나님, 곧 성막의 완성이신 예수 그리스도를 묵상합니다.",
+      "제암리교회는 1919년 3·1운동 당시 성도와 주민들이 교회 안에서 순교한 감리교회의 아픈 역사가 깃든 곳입니다. 앞서간 믿음의 증인들을 기억하며 우리의 신앙을 새롭게 합니다."
+    ],
+    how:["출발 시간과 집결 장소는 여선교회 안내를 확인해 주세요.","편한 신발과 날씨에 맞는 옷차림을 준비해 주세요.","순례 비용 후원은 아래 계좌로 하실 수 있습니다."],
+    verse:"이러므로 우리에게 구름 같이 둘러싼 허다한 증인들이 있으니 모든 무거운 것과 얽매이기 쉬운 죄를 벗어 버리고 인내로써 우리 앞에 당한 경주를 하며",
+    ref:"히브리서 12장 1절"
+  },
+  {
+    id:"musical", kind:"공연", kc:"k-stage",
+    title:"창립기념주일 뮤지컬 The Power", sub:"창립 10주년을 노래하는 무대",
+    date:"2026-12-05", dateEnd:"2026-12-06", dateLabel:"12월 5일 – 6일",
+    sessions:["1차 · 12월 5일 토요일 오후 7시","2차 · 12월 6일 주일 오전 10시 30분"],
+    place:"3층 본당", account:"137-006-409916",
+    intro:[
+      "창립기념주일을 맞아 성도들이 함께 준비한 뮤지컬 The Power를 올려드립니다.",
+      "우리를 여기까지 이끄신 것은 우리의 힘이 아니라 성령의 권능이었음을 고백하며, 다음 10년도 그 능력으로 증인 되기를 꿈꿉니다."
+    ],
+    how:["두 번의 공연 중 편한 시간을 골라 오세요.","믿지 않는 가족과 이웃을 초대하기 좋은 자리입니다.","공연 준비를 위한 후원은 아래 계좌로 하실 수 있습니다."],
+    verse:"오직 성령이 너희에게 임하시면 너희가 권능을 받고 예루살렘과 온 유대와 사마리아와 땅 끝까지 이르러 내 증인이 되리라 하시니라",
+    ref:"사도행전 1장 8절"
+  }
+];
+
+const $ = s => document.querySelector(s);
+const DOW = ["일","월","화","수","목","금","토"];
+function todayLocal(){const n=new Date();return new Date(n.getFullYear(),n.getMonth(),n.getDate());}
+function d(s){const [y,m,dd]=s.split("-").map(Number);return new Date(y,m-1,dd);}
+function daysLeft(e){return Math.round((d(e.date)-todayLocal())/864e5);}
+function isPast(e){return d(e.dateEnd||e.date)<todayLocal();}
+function whenText(e){return e.sessions?e.sessions.join(" / "):[e.dateLabel,e.time].filter(Boolean).join(" ");}
+
+function renderList(){
+  let html="", month=-1;
+  EVENTS.forEach(e=>{
+    const dt=d(e.date);
+    if(dt.getMonth()!==month){month=dt.getMonth();html+=`<div class="month">${month+1}월</div>`;}
+    const day=dt.getDate()+(e.dateEnd?"·"+d(e.dateEnd).getDate():"");
+    const dow=e.dateEnd?"토·주일":(DOW[dt.getDay()]==="일"?"주일":DOW[dt.getDay()]+"요일");
+    const meta=e.sessions?"2회 공연 · "+e.place:[e.time,e.place].filter(Boolean).join(" · ");
+    html+=`<button type="button" class="ev${isPast(e)?" past":""}" data-id="${e.id}">
+      <div class="ev-date"><b style="${e.dateEnd?"font-size:22px":""}">${day}</b><span>${dow}</span></div>
+      <div class="ev-body"><span class="ev-kind ${e.kc}">${e.kind}</span>
+        <p class="ev-title">${e.title}</p><p class="ev-meta">${meta}</p></div>
+      <span class="chev" aria-hidden="true"></span></button>`;
+  });
+  $("#list").innerHTML=html;
+  $("#list").querySelectorAll(".ev").forEach(b=>b.onclick=()=>go(b.dataset.id));
+}
+
+function renderNext(){
+  const up=EVENTS.find(e=>!isPast(e));
+  const card=$("#nextCard");
+  if(!up){card.innerHTML=`<div class="dday"><b>10</b></div><div><p class="next-label">함께해 주셔서 감사합니다</p><p class="next-title">창립 10주년 행사를 모두 마쳤습니다</p></div>`;card.onclick=null;return;}
+  const n=daysLeft(up);
+  const badge=n<=0?`<small>오늘</small><b>D-day</b>`:`<small>D-</small><b>${n}</b>`;
+  card.innerHTML=`<div class="dday">${badge}</div>
+    <div><p class="next-label">다가오는 행사</p><p class="next-title">${up.title}</p><p class="next-when">${up.sessions?up.dateLabel:whenText(up)}</p></div>`;
+  card.onclick=()=>go(up.id);
+}
+
+function renderDetail(id){
+  const i=EVENTS.findIndex(e=>e.id===id); if(i<0) return false;
+  const e=EVENTS[i], prev=EVENTS[i-1], next=EVENTS[i+1];
+  const whenRows=e.sessions
+    ? e.sessions.map((s,k)=>`<div class="fact"><dt>${k+1}차</dt><dd>${s.split(" · ")[1]}</dd></div>`).join("")
+    : `<div class="fact"><dt>날짜</dt><dd>${e.dateLabel}</dd></div>`+(e.time?`<div class="fact"><dt>시간</dt><dd>${e.time}</dd></div>`:"");
+  const placeRow=e.maps
+    ? `<div class="fact"><dt>장소</dt><dd>${e.maps.map(m=>`${m[0]}<a href="${m[1]}" target="_blank" rel="noopener">지도</a>`).join("<br>")}</dd></div>`
+    : `<div class="fact"><dt>장소</dt><dd>${e.place}</dd></div>`;
+  $("#topTitle").textContent=e.title;
+  $("#detailBody").innerHTML=`
+    <div class="d-head"><span class="ev-kind ${e.kc}">${e.kind}</span><h2>${e.title}</h2><p class="d-sub">${e.sub}</p></div>
+    <dl class="facts">${whenRows}${placeRow}</dl>
+    <div class="block"><h3>행사 소개</h3>${e.intro.map(p=>`<p>${p}</p>`).join("")}</div>
+    <div class="block"><h3>함께하는 방법</h3><ul class="steps">${e.how.map(h=>`<li>${h}</li>`).join("")}</ul></div>
+    <blockquote class="word"><p>${e.verse}</p><cite>${e.ref}</cite></blockquote>
+    ${e.account?`<div class="give"><div class="give-text"><small>후원계좌 · 신협</small><b>${e.account}</b></div>
+      <button class="copy" type="button" data-acc="신협 ${e.account}">계좌 복사</button></div>`:""}
+    <nav class="pager">
+      <button type="button" ${prev?`data-id="${prev.id}"`:"disabled"}><small>이전 행사</small><span>${prev?prev.title:""}</span></button>
+      <button type="button" class="nx" ${next?`data-id="${next.id}"`:"disabled"}><small>다음 행사</small><span>${next?next.title:""}</span></button>
+    </nav>`;
+  $("#detailBody").querySelectorAll(".pager button[data-id]").forEach(b=>b.onclick=()=>go(b.dataset.id,true));
+  const c=$("#detailBody").querySelector(".copy"); if(c) c.onclick=()=>copy(c.dataset.acc,"계좌번호를 복사했습니다");
+  return true;
+}
+
+function go(id,replace){ if(replace) history.replaceState(null,"","#"+id); else location.hash=id; route(); }
+function route(){
+  const id=location.hash.slice(1), panel=$("#detail");
+  if(id && renderDetail(id)){
+    panel.classList.add("open"); panel.setAttribute("aria-hidden","false"); panel.scrollTop=0;
+    setTimeout(()=>$("#backBtn").focus({preventScroll:true}),320);
+  } else {
+    panel.classList.remove("open"); panel.setAttribute("aria-hidden","true");
+  }
+}
+$("#backBtn").onclick=()=>{ if(history.length>1 && location.hash) history.back(); else {history.replaceState(null,"",location.pathname);route();} };
+window.addEventListener("hashchange",route);
+
+function toast(msg){const t=$("#toast");t.textContent=msg;t.classList.add("show");clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove("show"),1800);}
+function copy(text,msg){
+  const done=()=>toast(msg);
+  if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(done,()=>fallback(text,done));}
+  else fallback(text,done);
+}
+function fallback(text,done){
+  const ta=document.createElement("textarea");ta.value=text;ta.setAttribute("readonly","");
+  ta.style.position="fixed";ta.style.opacity="0";document.body.appendChild(ta);ta.select();
+  try{document.execCommand("copy");done();}catch(e){toast(text);} ta.remove();
+}
+$("#shareLink").onclick=()=>copy(location.href.split("#")[0],"페이지 주소를 복사했습니다");
+
+renderList(); renderNext(); route();
+</script>
+</body>
+</html>
